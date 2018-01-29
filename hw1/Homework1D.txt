@@ -1,3 +1,27 @@
 Joseph T Sandmeyer
 CM 163 HOMEWORK 1 WRITE UP
 
+https://imgur.com/a/GBwQm
+
+This is a screenshot from Katamari Damacy, a game where
+the player rools around ball that collects pretty much
+any mesh in the scene it collides with, as long as the
+mesh is roughly smaller than the current size of the
+ball. When an environmental object or a wall is between
+the katamari and the camera, a shader drills a little
+hole in the wall so that the player still has vision
+of the katamari. It is an elegant solution for what
+could potentially be a lot of gameplay-disrupting
+annoyance.
+
+I think the effect is a result of a dynamically-sized
+x-ray sphere that makes any parts of a mesh it is
+colliding with transparent. The sphere is always in
+the center of the camera. It does not relate to lighting
+because everything in katamari damacy is cell shaded.
+It is designed to update the appearence of only
+colliding pixels on the target object's transform to
+make them transparent.
+
+This is an effect that would be useful in my 170 game,
+if I can figure it out in Unity.

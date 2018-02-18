@@ -1,8 +1,7 @@
-var vShader = `
-    uniform float time;
-    varying vec3 fPosition;
+var skyBoxVShader = `
+    varying vec3 v_pos;
 
     void main() {
-        fPosition = position;
+        v_pos = position;
         gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
     }`;

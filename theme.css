@@ -146,6 +146,42 @@ img {
   padding-top: 6px;
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
 /* Turn off these classes on tablets and phones */
 @media only screen and (max-device-width: 1024px) {
 	.pages,
@@ -157,11 +193,13 @@ img {
 		display: none;
 	}
 	.gallery {
-		margin-top: -60px;
+		margin-top: -120px;
 	}
 }
 
 /* Turn off these classes on desktop browsers */
 @media only screen and (min-device-width: 1024px) {
-	
+	.topnav {
+		display: none;
+	}
 }

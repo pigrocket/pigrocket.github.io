@@ -162,11 +162,12 @@ img {
 	.triangle-bottomright{
 		display: none;
 	}
+	iframe {
+		margin-bottom: -200px;
+	}
 }
 
 /* Turn off these classes on desktop browsers */
 @media only screen and (min-device-width: 1024px) {
-	iframe {
-		margin-bottom: -200px;
-	}
+	
 }

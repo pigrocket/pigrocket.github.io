@@ -155,6 +155,7 @@ img {
 /* Turn off these classes on tablets and phones */
 @media only screen and (max-device-width: 1024px) {
 	.pages,
+	.xtra,
     .triangle-topright, 
 	.triangle-bottomleft, 
 	.triangle-topleft, 

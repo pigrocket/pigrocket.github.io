@@ -147,6 +147,7 @@ img {
 }
 
 .topnav {
+  z-index: 3;
   overflow: hidden;
   background-color: #333;
   position: relative;
@@ -193,7 +194,7 @@ img {
 		display: none;
 	}
 	.gallery {
-		margin-top: -160px;
+		margin-top: -200px;
 	}
 }
 

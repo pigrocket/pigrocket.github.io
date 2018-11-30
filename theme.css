@@ -162,8 +162,8 @@ img {
 	.triangle-bottomright{
 		display: none;
 	}
-	iframe {
-		margin-bottom: -500px;
+	.gallery {
+		margin-top: -300px;
 	}
 }
 

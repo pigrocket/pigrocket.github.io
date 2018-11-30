@@ -72,12 +72,6 @@ a:active {
   font: 400 15px/1.8 "Lato", sans-serif;
 }
 
-.gallery {
-  z-index: 2;
-  word-spacing: 20px;
-  font: 400 15px/1.8 "Lato", sans-serif;
-}
-
 .status {
 	font-size: 24px;
 	background-color: rgba(255,255,255,0.30);
@@ -163,7 +157,7 @@ img {
 		display: none;
 	}
 	.gallery {
-		margin-top: -1000px;
+		margin-top: -300px;
 	}
 }
 

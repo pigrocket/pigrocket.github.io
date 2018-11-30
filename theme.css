@@ -76,7 +76,7 @@ a:active {
   font: 400 15px/1.8 "Lato", sans-serif;
 }
 
-div.border {
+.border {
   margin-top: -40px;
   text-align: center;
   background-color: #111;

@@ -6,7 +6,6 @@ body, html {
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   
-  opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +19,7 @@ body, html {
 
 .bgimg-2 {
   background-image: url("img_parallax2.jpg");
-  min-height: 452px;
+  min-height: 468px;
 }
 
 .bgimg-3 {
@@ -46,13 +45,17 @@ a:active {
 
 .caption {
   position: absolute;
-  left: 0;
-  top: 160px;
-  left:25%;
-  right:25%;
+  top: 170px;
+  width: 100%;
   text-align: center;
-  color: #000;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #fff;
+  font: 400 15px/1.2 "Lato", sans-serif;
+  letter-spacing: 3px;
+  transform: scale(1, 1.7);
+  -webkit-transform: scale(1, 1.7); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.7); /* Firefox */
+  -ms-transform: scale(1, 1.7); /* IE 9+ */
+  -o-transform: scale(1, 1.7); /* Opera */
 }
 
 .pages {
@@ -62,7 +65,6 @@ a:active {
   top: 20px;
   width: 100%;
   text-align: center;
-  color: #000;
   color: #fff;
   font-size: 20px;
   letter-spacing: 2px;
@@ -76,13 +78,59 @@ a:active {
   font: 400 15px/1.8 "Lato", sans-serif;
 }
 
+.status {
+	font-size: 24px;
+	background-color: rgba(255,255,255,0.30);
+	min-height: 170px;
+	max-width: 568px;
+	margin-top: -190px;
+	color: #fff;
+}
+
 .border {
-  margin-top: -40px;
+  margin-top: 9.2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 446px;
   text-align: center;
-  background-color: #111;
+  background-color: #bb99ff;
   color: #fff;
-  font-size: 30px;
-  letter-spacing: 10px;
+  font-size: 20px;
+  letter-spacing: 8px;
+  font-family: Arial,Helvetica, sans-serif;
+  transform: scale(1, 1.2);
+  -webkit-transform: scale(0.8, 1.2); /* Safari and Chrome */
+  -moz-transform: scale(0.8, 1.2); /* Firefox */
+  -ms-transform: scale(0.8, 1.2); /* IE 9+ */
+  -o-transform: scale(0.8, 1.2); /* Opera */
+}
+
+.triangle-topright{
+  width: 0;
+  height: 0;
+  border-top: 50px solid #bb99ff;
+  border-right: 50px solid transparent;
+}
+
+.triangle-topleft{
+  width: 0;
+  height: 0;
+  border-top: 50px solid #bb99ff;
+  border-left: 50px solid transparent;
+}
+
+.triangle-bottomright{
+  width: 0;
+  height: 0;
+  border-bottom: 56px solid #bb99ff;
+  border-right: 50px solid transparent;
+}
+
+.triangle-bottomleft{
+  width: 0;
+  height: 0;
+  border-bottom: 56px solid #bb99ff;
+  border-left: 50px solid transparent;
 }
 
 h3 {
@@ -93,13 +141,11 @@ h3 {
 }
 
 .row {
-  margin-left: 13%;
 }
 
 .column {
- float: left;
- padding: 6px;
- overflow: auto;
+ display: inline-block;
+ vertical-align:top;
 }
 
 img {

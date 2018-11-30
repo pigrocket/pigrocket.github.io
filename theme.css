@@ -151,3 +151,19 @@ h3 {
 img {
   padding-top: 6px;
 }
+
+/* Turn off these classes on tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+	.pages,
+    .triangle-topright, 
+	.triangle-bottomleft, 
+	.triangle-topleft, 
+	.triangle-bottomright{
+		display: none;
+	}
+}
+
+/* Turn off these classes on desktop browsers */
+@media only screen and (min-device-width: 1024px) {
+
+}

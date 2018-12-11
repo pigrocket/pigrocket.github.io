@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<!-- saved from url=(0060)https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm -->
-<html class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-  <head>
+<!-- Thank you w3schools.com -->
+<html class="translated-ltr">
 
-
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="theme.css">
 
 <body>
   <div id="home"></div>
 
-  <div class="xtra" style="color:#fff; position: fixed; z-index: 1; width: 97%; height: 0px; top:0px; left:0px; color: #777;background-color:white;padding:35px 80px;">
+  <div class="whitebar">
   
   </div>
 
   <!-- Top Navigation Menu -->
+	<!-- Mobile -->
 	<div class="topnav">
 	  <a href="#home" class="active"></a>
 	  <div id="myLinks">
-		<a href="#home">Home</a>
-		<a href="#gallery">Gallery</a>
-		<a href="pricing.htm">Pricing</a>
-		<a href="order.htm">How to Order</a>
-		<a href="https://goo.gl/forms/0GOSMaofwPfD6ukE2">Quote Form</a>
-		<a href="https://trello.com/b/FgMs4HBG/delicious-disguises-queue">Queue</a>
-		<a  href="contact.htm">Contact</a>
+		<a href="index.html#home">Home</a>
+		<a href="index.html#gallery">Gallery</a>
+		<a href="pricing.html">Pricing</a>
+		<a href="order.html">How to Order</a>
+		<a href="https://goo.gl/forms/0GOSMaofwPfD6ukE2" target="_blank"> <!-- blank target opens new tab -->
+		Quote Form</a>
+        <a href="https://trello.com/b/FgMs4HBG/delicious-disguises-queue" target="_blank">
+        Queue</a>
+		<a  href="contact.html">Contact</a>
 	  </div>
 	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 		<div class="hamburger"></div>
@@ -33,9 +36,19 @@
 		<i class="fa fa-bars"></i>
 	  </a>
 	</div>
-  <div class="pages">
-    <b><a href="#home">HOME</a>  <a href="#gallery">GALLERY</a> <a href="pricing.htm">PRICING</a>  <a href="order.htm">HOW TO ORDER</a> <a href="https://goo.gl/forms/0GOSMaofwPfD6ukE2">QUOTE FORM</a> <a href="https://trello.com/b/FgMs4HBG/delicious-disguises-queue">QUEUE</a> <a  href="contact.htm">CONTACT</a></b>
-  </div>
+	
+    <!-- Desktop -->
+    <div class="pages">
+        <b><a href="index.html#home">HOME</a>  
+        <a href="index.html#gallery">GALLERY</a> 
+        <a href="pricing.html">PRICING</a>  
+        <a href="order.html" style="word-spacing:2px;">HOW TO ORDER</a> 
+        <a href="https://goo.gl/forms/0GOSMaofwPfD6ukE2" target="_blank" style="word-spacing:2px;">
+        QUOTE FORM</a>
+        <a href="https://trello.com/b/FgMs4HBG/delicious-disguises-queue" target="_blank">
+        QUEUE</a>
+        <a  href="contact.html">CONTACT</a></b>
+    </div>
   
   <center>
   <div class="caption">
@@ -70,9 +83,12 @@
 	</div>
 	<div class="column">
 	<div class="border">     
-		<font style="letter-spacing:4px"><b>QUOTES:</b></font> <font color="darkred"><b>CLOSED</b></font><br>
-		<font style="letter-spacing:4px"><b>COMMISSIONS:</b></font> <font color="darkred"><b>CLOSED</b></font>  <br>
-		<font style="letter-spacing:4px"><b>REOPENING:</b></font> <font color="green"><b>MARCH 2019</b></font>  <br>
+		<font style="letter-spacing:4px"><b>QUOTES:</b></font>
+        <font color="darkred"><b>CLOSED</b></font><br>
+		<font style="letter-spacing:4px"><b>COMMISSIONS:</b></font>
+        <font color="darkred"><b>CLOSED</b></font>  <br>
+		<font style="letter-spacing:4px"><b>REOPENING:</b></font>
+        <font color="green"><b>MARCH 2019</b></font>  <br>
 	</div>
 	</div>
 	<div class="column" style="margin-left: -47px">
@@ -86,7 +102,9 @@
 	
 	<br><br>
 
-<iframe style="margin-bottom:-60px;position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=responsive&input=food&sort=0&by=keywords&theme=default&scale=fill&limit=10&skin=default&autoplay=true" scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"><small>Powered by <a href="https://flickrembed.com">flickr embed</a>.</small><p>View all <a rel="nofollow" href="https://s3.amazonaws.com/tui-discount-codes/index.html">TUI coupons</a> before you book</p></iframe><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+<center>
+<iframe height="300px" width="80%" src="https://www.deliciousdisguises.com/" name="iframe_a"></iframe>
+</center>
 
 <div id="gallery" class="gallery" style="overflow:auto;">
 
@@ -171,27 +189,48 @@
   </div>
 
 
-</div>
 
 <br><br><br><br>
 
 <div class="bgimg-1">
 	<br><br><br><br>
     <center>
-    <span class="
-	
-	
-	
-	
-	
-	"><font style="font-size:24px">
+    <span><font style="font-size:24px">
 	<div style="color:#000;z-index:2">
-	Delicious Disguises  | deliciousdisguises@gmail.com | Santa Cruz, California, USA
+    
+    <a href="https://www.facebook.com/DeliciousDisguises/">
+    <img src="img/fb.webp" style="padding:6px;">
+    </a>
+    
+    <a href="https://twitter.com/delishdisguises">
+    <img src="img/twitter.webp" style="padding:6px;">
+    </a>
+    
+    <a href="https://www.instagram.com/deliciousdisguises/">
+    <img src="img/insta.webp" style="padding:6px;">
+    </a>
+    
+    <a href="https://www.youtube.com/channel/UCscGAJUXcGprVNVfbsp0x_w">
+    <img src="img/yt.webp" style="padding:6px;">
+    </a>
+    
+    <a href="">
+    <img src="img/btn_donate_LG.gif" style="padding-bottom:12px;">
+    </a>
+    
+    
+    <br>
+    
+	Delicious Disguises  | 
+    deliciousdisguises@gmail.com | 
+    Santa Cruz, California, USA
 	</div>
 	</font></span>
     </center>
 	<br>
 
+<!-- script for mobile nav bar -->
+    
 <script>
 function myFunction() {
   var x = document.getElementById("myLinks");

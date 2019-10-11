@@ -1,0 +1,25 @@
+html,
+body {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  height: 400px;
+  width: 400px;
+  background-color: black;
+}
+
+form {
+  padding-left: 40px;
+}
+
+input {
+  padding: 5px;
+}

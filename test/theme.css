@@ -16,10 +16,8 @@ body {
   background-color: white;
 }
 
-form {
-  padding-left: 40px;
-}
-
-input {
-  padding: 5px;
+svg {
+  position: fixed;
+  top: 60px;
+  overflow: visible;
 }

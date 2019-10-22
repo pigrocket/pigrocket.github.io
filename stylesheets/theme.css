@@ -1,0 +1,240 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("img_parallax.jpg");
+  min-height: 20%;
+}
+
+.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 468px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 250px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkred;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:active {
+    color: hotpink;
+}
+
+.caption {
+  position: absolute;
+  top: 170px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font: 400 15px/1.2 "Lato", sans-serif;
+  letter-spacing: 3px;
+  transform: scale(1, 1.7);
+  -webkit-transform: scale(1, 1.7); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.7); /* Firefox */
+  -ms-transform: scale(1, 1.7); /* IE 9+ */
+  -o-transform: scale(1, 1.7); /* Opera */
+}
+
+.pages {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 20px;
+  font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+.status {
+	font-size: 24px;
+	background-color: rgba(255,255,255,0.30);
+	min-height: 170px;
+	max-width: 568px;
+	margin-top: -190px;
+	color: #fff;
+}
+
+.border {
+  margin-top: 9.2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 446px;
+  text-align: center;
+  background-color: #bb99ff;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 8px;
+  font-family: Arial,Helvetica, sans-serif;
+  transform: scale(1, 1.2);
+  -webkit-transform: scale(0.8, 1.2); /* Safari and Chrome */
+  -moz-transform: scale(0.8, 1.2); /* Firefox */
+  -ms-transform: scale(0.8, 1.2); /* IE 9+ */
+  -o-transform: scale(0.8, 1.2); /* Opera */
+}
+
+.triangle-topright{
+  width: 0;
+  height: 0;
+  border-top: 50px solid #bb99ff;
+  border-right: 50px solid transparent;
+}
+
+.triangle-topleft{
+  width: 0;
+  height: 0;
+  border-top: 50px solid #bb99ff;
+  border-left: 50px solid transparent;
+}
+
+.triangle-bottomright{
+  width: 0;
+  height: 0;
+  border-bottom: 56px solid #bb99ff;
+  border-right: 50px solid transparent;
+}
+
+.triangle-bottomleft{
+  width: 0;
+  height: 0;
+  border-bottom: 56px solid #bb99ff;
+  border-left: 50px solid transparent;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.row {
+}
+
+.column {
+ display: inline-block;
+ vertical-align:top;
+}
+
+img {
+  padding-top: 6px;
+}
+
+.circle {
+	border-radius: 50%;
+	border: 0px solid red;
+	overflow: hidden;
+}
+
+.topnav {
+  z-index: 3;
+  overflow: auto;
+  background-color: #333;
+  width: 100%;
+  position: fixed;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  min-height: 20px;
+  min-width: 20px;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #fff;
+  min-height: 20px;
+  color: white;
+}
+
+.whitebar {
+    color:#fff; 
+    position: fixed; 
+    z-index: 1; 
+    width: 97%; 
+    height: 0px; 
+    top:0px; 
+    left:0px;
+    color: #777;
+    background-color:white;
+    padding:35px 80px;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Turn off these classes on tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+	.pages,
+	.xtra,
+    .whitebar,
+    .triangle-topright, 
+	.triangle-bottomleft, 
+	.triangle-topleft, 
+	.triangle-bottomright{
+		display: none;
+	}
+	.gallery {
+		margin-top: -200px;
+	}
+}
+
+/* Turn off these classes on desktop browsers */
+@media only screen and (min-device-width: 1024px) {
+	.topnav {
+		display: none;
+	}
+}

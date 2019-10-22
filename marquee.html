@@ -3,21 +3,83 @@
 <html class="translated-ltr">
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/jquery-1.7.2.min.js"></script>
+
+<script>
+// jQuery image gallery
+
+$(document).ready(function() {
+    
+    // gallery data potentially arriving from an AJAX call...
+    var imageLibraryData = [
+        "gallery/co9u0guhosnj.jpg",
+        "gallery/akpjmbldfgln.jpg",
+        "gallery/sfozdjhzd.jpg",
+        "gallery/mfklhmldfh.jpg",
+        "gallery/rhzsdhztjz.jpg",
+        "gallery/d0koiphdfk.jpg",
+        "gallery/d0klhjdfjsdh.jpg",
+        "gallery/mljdhld.jpg",
+        "gallery/edjhsrtjs.jpg",
+        "gallery/c90ujoihjsr.jpg",
+        "gallery/fzdjhndfh.png",
+        "gallery/jeiojgosh.jpg",
+        "gallery/ajmhklfgdj.png",
+        "gallery/szfhdfh.jpg",
+        "gallery/diuohojn.png",
+        ];
+
+    var currentImageIndex = 0;
+    var imageWidth = 306;
+    var imageLibraryCount = imageLibraryData.length;
+    var imageStripWidth = imageWidth * imageLibraryCount;
+    
+    // setup width of gallery image strip
+    //
+    $('#gallery_image')
+        .css('width', imageStripWidth)
+        .css('min-width', imageStripWidth);
+    
+    // load images and tile them.
+    //
+    for (var i = 0; i < imageLibraryCount; i++) {
+        $('#gallery_image').append('<img class="tiled_image" src="' + imageLibraryData[i] + '" />');
+    }
+    
+    // setup jQuery events for button clicks
+    //
+    $('#next').click(function() {
+        currentImageIndex++;
+        if (currentImageIndex > imageLibraryCount - 1) {
+            currentImageIndex = imageLibraryCount - 1;
+        } else {
+            $("#gallery_image").animate({"left": "-=" + imageWidth}, "fast");
+        }        
+    });
+    $('#previous').click(function() {        
+        currentImageIndex--;
+        if (currentImageIndex < 0) {
+            currentImageIndex = 0;
+        } else {
+            $("#gallery_image").animate({"left": "+=" + imageWidth}, "fast");
+        }            
+    });
+    
+});
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/gallery.css">
+
+</head>
 
 <body>
   
-    <marquee width="100%" direction="right" height="100%" scrollamount="5">
-    This is sample scrolling text.
-    </marquee>
-    <marquee width="100%" direction="up" height="100%" scrollamount="1">
-    This is sample scrolling text.
-    </marquee>
-    <marquee width="100%" direction="right" height="100%" scrollamount="30">
-    This is sample scrolling text.
-    </marquee>
-    
+    <div id="gallery_viewport">
+     <div id="gallery_image"></div>
+     <div class="styled_button" id="previous">Previous</div>
+     <div class="styled_button" id="next">Next</div>
+    </div>
     
   
 </body>

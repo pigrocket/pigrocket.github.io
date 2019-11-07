@@ -1,4 +1,4 @@
 # pigrocket.github.io
-my page yo
+my page
 
 a place for personal and WIP pages
